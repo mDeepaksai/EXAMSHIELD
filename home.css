@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: 80px 1fr 60px;
+    grid-template-columns: 1fr; 
+    min-height: 100vh;
+    margin: 0;
+    grid-gap: 10px;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+.main{
+    grid-area: main;
+}
+.atlast{
+    grid-area: footer;
+}
