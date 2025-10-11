@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+        "main section";
+    grid-template-rows: 500px 500px;
+}
+main{
+    grid-area: main;
+}
+section{
+    grid-area: section;
+}
