@@ -1,3 +1,4 @@
+/* body */
 body {
     display: grid;
     grid-template-areas:
@@ -11,6 +12,7 @@ body {
     grid-gap: 10px;
 }
 
+/* navigation */
 .nav {
     grid-area: nav;
     display: flex;
@@ -46,7 +48,7 @@ body {
 .nav ul li a.Login {
     border: 2px solid black;
     border-radius: 10px;
-    transition: color 1s ease, background-color 1s ease, border-color 1s ease; 
+    transition: color 1s ease, background-color 1s ease, border-color 1s ease;
 }
 
 .nav ul li a.Demo {
@@ -72,6 +74,7 @@ body {
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* main */
 .main {
     grid-area: main;
     display: flex;
@@ -89,7 +92,7 @@ body {
     border-radius: 10px;
     color: black;
     background-color: white;
-    transition: all 1s ease; 
+    transition: all 1s ease;
 }
 
 .main .get-started {
@@ -126,6 +129,7 @@ span {
     padding-left: 250px;
 }
 
+/* footer */
 .atlast {
     grid-area: footer;
     position: relative;
