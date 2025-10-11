@@ -18,6 +18,7 @@ body {
     align-items: center;
     position: relative;
 }
+
 .nav ul {
     list-style: none;
     display: flex;
@@ -29,6 +30,7 @@ body {
     text-decoration: none;
     color: black;
     padding: 10px;
+    font-size: 15px;
 }
 
 .nav ul li a:hover {
@@ -95,12 +97,13 @@ body {
     color: rgb(217, 119, 119);
     background-color: rgb(0, 0, 0);
 }
+
 .main::before {
     content: "";
-    background-image:url(23795ca66d0.png);
-     background-size: cover;           /* ensures image fills the whole area */
-    background-position: center;      
-    background-repeat: no-repeat; 
+    background-image: url(23795ca66d0.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -109,6 +112,7 @@ body {
     z-index: -1;
     opacity: 0.7;
 }
+
 span {
     padding-left: 250px;
 }
