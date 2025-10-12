@@ -88,6 +88,11 @@ body {
     position: relative;
     padding-top: 150px;
 }
+.main .change{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
 
 .main .get-started,
 .main .call {
@@ -131,7 +136,7 @@ body {
 }
 
 span {
-    padding-left: 250px;
+    padding-left: 100px;
 }
 
 /* footer */
@@ -179,5 +184,55 @@ span {
 /* explore-features */
 .explore-features {
     height: 100vh;
-    /* full page */
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: rgb(217, 176, 176);
+    box-shadow: 0 -10px 15px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.main_box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 300px;
+    gap: 20px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    transition: all 1s ease;
+    box-shadow: 0 10px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    background-color: rgb(244, 175, 175);
+    color: white;
+    transform: translateY(20px);
+}
+.card i{
+    font-size: 50px;
+    padding-bottom: 20px;
+    transition: all 1s ease;
+}
+.card i:hover{
+    transform: rotate(360deg);
 }

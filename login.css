@@ -13,7 +13,8 @@ main {
     grid-area: main;
     position: relative;
 }
-main::before{
+
+main::before {
     content: "";
     position: absolute;
     top: 0;
@@ -66,41 +67,43 @@ form {
     font-family: "Roboto Mono", monospace;
     font-size: 14px;
     color: #000;
-    
+
 }
+
 .divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 10px;
-  margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .divider hr {
-  flex: 1;
-  height: 1px;
-  background-color: #ccc;
-  border: none;
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
 }
 
 .divider span {
-  font-family: "Roboto Mono", monospace;
-  color: #555;
-  font-size: 14px;
-  font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .google-icon {
-  font-size: 24px;
-  color: #db4437;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    font-size: 24px;
+    color: #db4437;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .google-icon:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 /* section-where i done my half side with image work */
 section {
     grid-area: section;
