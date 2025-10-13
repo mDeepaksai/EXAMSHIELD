@@ -1,5 +1,7 @@
 html {
+    zoom: 1;
     scroll-behavior: smooth;
+    /* overflow: hidden; */
 }
 
 /* body */
@@ -52,7 +54,7 @@ body {
 .nav ul li a.Login {
     border: 2px solid black;
     border-radius: 10px;
-    transition: color 1s ease, background-color 1s ease, border-color 1s ease;
+    transition: color 1s ease, background-color 1s ease, border-color 1s ease,transform 1s ease;
 }
 
 .nav ul li a.Demo {
@@ -235,4 +237,8 @@ h1 {
 }
 .card i:hover{
     transform: rotate(360deg);
+}
+/* architecture section */
+.architecture{
+    height: 100vh;
 }
