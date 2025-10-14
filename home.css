@@ -358,7 +358,82 @@ h1 {
     color: whitesmoke;
     border-color: black;
 }
+
 /* team and contact */
-.team{
-    height: 100vh;
+.team {
+    height: 100%;
+    position: relative;
+}
+
+.team::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: rgb(217, 176, 176);
+}
+
+.sub-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sai,
+.simi {
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    transition: all 2s ease;
+    box-shadow: 10px 10px 10px black;
+}
+
+.sai:hover,
+.simi:hover {
+    background-color: black;
+    color: whitesmoke;
+    transform: translate(20px, 30px);
+}
+
+.link {
+    font-size: 30px;
+    color: black;
+}
+
+.sai:hover .link,
+.simi:hover .link {
+    color: whitesmoke;
+    background-color: black;
+}
+/* contact box */
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-form h1 {
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    color: #000;
+}
+form{
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+input,button,textarea{
+    border-radius: 20px;
+    padding: 10px;
 }
