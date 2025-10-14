@@ -358,3 +358,7 @@ h1 {
     color: whitesmoke;
     border-color: black;
 }
+/* team and contact */
+.team{
+    height: 100vh;
+}
