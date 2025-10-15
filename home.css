@@ -1,7 +1,6 @@
 html {
     zoom: 1;
     scroll-behavior: smooth;
-    /* overflow: hidden; */
 }
 
 /* body */
@@ -413,19 +412,22 @@ h1 {
     color: whitesmoke;
     background-color: black;
 }
+
 /* contact box */
-.contact-form{
+.contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .contact-form h1 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     margin-top: 10px;
     color: #000;
 }
-form{
+
+form {
     border: 2px solid black;
     padding: 20px;
     display: flex;
@@ -433,7 +435,104 @@ form{
     border-radius: 20px;
     box-shadow: 10px 10px 10px black;
 }
-input,button,textarea{
+
+input,
+button,
+textarea {
     border-radius: 20px;
     padding: 10px;
+}
+
+/* bottom to top */
+.btn {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 0 5px 5px;
+}
+
+/* dark mode */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark .nav ul li a {
+    color: white;
+    background-color: #333;
+}
+
+body.dark .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark .box {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark .log,
+body.dark #log1 {
+    color: white;
+    border-color: white;
+    background-color: #333;
+}
+
+body.dark .main .get-started,
+body.dark .main .call {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
+
+body.dark .team .sai,
+body.dark .team .simi {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark .team .link {
+    color: white;
+}
+
+body.dark h1,
+body.dark h3,
+body.dark h5,
+body.dark .tagline {
+    color: white;
+}
+
+body.dark .contact-form,
+body.dark form,
+body.dark input,
+body.dark textarea,
+body.dark button {
+    background-color: #1e1e1e;
+    color: white;
+    border-color: white;
+}
+
+/* DARK MODE BACKGROUNDS FOR SECTIONS */
+body.dark .main::before,
+body.dark .explore-features::before,
+body.dark .user_benefits::before,
+body.dark .team::before,
+body.dark .atlast::before {
+    background-color: #121212;
+    opacity: 0.7;
+}
+
+#darkModeBtn {
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077ff;
+    color: white;
+    z-index: 9999
 }
