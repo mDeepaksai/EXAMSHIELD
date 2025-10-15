@@ -147,3 +147,12 @@ section::before {
     z-index: -1;
     opacity: 0.8;
 }
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.input-box input.error-border {
+    border-color: red;
+}
