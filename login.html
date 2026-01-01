@@ -27,16 +27,16 @@
     </section>
     <main>
         <a href="#"><img src="E__1_-removebg-preview.png" alt="error" height="350px" width="350px" class="img"></a>
-        <form action="backend.php">
+        <form action="/login" method="post">
             <div class="input-box">
                 <label for="name">EMAIL</label><br>
-                <input type="email" id="name" placeholder="Enter your email">
+                <input type="email" id="name" name="email" placeholder="Enter your email">
                 <p class="error" id="nameError"></p>
             </div><br>
 
             <div class="input-box">
                 <label for="pass">PASSWORD</label><br>
-                <input type="password" id="pass" placeholder="Enter your password">
+                <input type="password" id="pass" name="password" placeholder="Enter your password">
                 <p class="error" id="passError"></p>
             </div>
             <a href="#" class="forgot-password">Forgot Password?</a><br>
