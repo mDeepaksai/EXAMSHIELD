@@ -536,3 +536,113 @@ body.dark .atlast::before {
     color: white;
     z-index: 9999
 }
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    body {
+        grid-template-rows: auto auto auto;
+    }
+
+    /* NAVIGATION */
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav ul li a.Demo,
+    .nav ul li a.Login {
+        margin-left: 0;
+    }
+
+    /* MAIN SECTION */
+    .main {
+        padding-top: 60px;
+        height: auto;
+    }
+
+    .main .change {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    span {
+        padding-left: 0;
+    }
+
+    .main .get-started,
+    .main .call {
+        margin: 10px 0;
+    }
+
+    /* FEATURES */
+    .explore-features {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .main_box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* INSTITUTION SECTION */
+    .user_benefits {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .mainsection {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .box {
+        height: auto;
+        padding: 20px;
+    }
+
+    .vertical-text,
+    .vertical-para,
+    .log {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    #log1 {
+        top: 0;
+    }
+
+    /* TEAM */
+    .sub-box {
+        flex-direction: column;
+    }
+
+    .sai,
+    .simi {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .atlast ul {
+        gap: 30px;
+        font-size: 25px;
+    }
+
+    /* DARK MODE BUTTON */
+    #darkModeBtn {
+        top: 10px;
+        left: 10px;
+    }
+}

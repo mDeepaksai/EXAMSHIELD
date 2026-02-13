@@ -156,3 +156,43 @@ section::before {
 .input-box input.error-border {
     border-color: red;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    body {
+        grid-template-areas:
+            "section"
+            "main";
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    section h4 {
+        margin-bottom: 40px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .img {
+        margin: 0 auto 20px auto;
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+
+    form {
+        margin-top: 0;
+    }
+
+    .input-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
