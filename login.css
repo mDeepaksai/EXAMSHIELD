@@ -158,7 +158,8 @@ input:focus {
 
 .google {
     width: 300px;
-    margin: 50px;
+    margin-top: 45px;
+    margin-bottom: 20px;
     padding: 10px;
     cursor: pointer;
     border-radius: 30px;
