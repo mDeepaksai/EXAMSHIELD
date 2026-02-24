@@ -4,56 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <meta name="description" content="This is a login page with backend functionality.">
+    <meta name="keywords" content="HTML, CSS, JavaScript,python(django), login, backend">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <meta name="description" content="Secure login for ExamShield – Access your AI-powered, encrypted exam platform safely.">
-<meta name="keywords" content="ExamShield login, secure login, AI exam system, encrypted exams">
-<meta name="author" content="Mallarpu Deepak Sai & Smiriti Kumari">
-    <title>| LOGIN |</title>
     <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js"></script>
+    <title>login page</title>
 </head>
 
 <body>
-    <section>
-        <h1>Guarding Knowledge with Technology.</h1><br>
-        <h4>EXAMSHIELD-protecting exam integrity with AI and encryption<br>AI powered Secure exam material distrubution
-            system</h4>
-    </section>
     <main>
-        <a href="#"><img src="E__1_-removebg-preview.png" alt="error" height="350px" width="350px" class="img"></a>
-        <form>
-            <div class="input-box">
-                <label for="name">EMAIL</label><br>
-                <input type="email" id="name" name="email" placeholder="Enter your email">
-                <p class="error" id="nameError"></p>
-            </div><br>
-
-            <div class="input-box">
-                <label for="pass">PASSWORD</label><br>
-                <input type="password" id="pass" name="password" placeholder="Enter your password">
-                <p class="error" id="passError"></p>
-            </div>
-            <a href="#" class="forgot-password">Forgot Password?</a><br>
-            <div class="input-box">
-                <input type="submit" value="SIGN IN" class="sign-in">
-            </div>
-            <div class="divider">
-                <hr><span>OR</span>
-                <hr>
-            </div>
-            <div>
-                <p><i class="fa-brands fa-google"></i> <a href="#">Sign in with Google</a></p><br>
-            </div>
-            <div class="new">
-                <p>Are you new? <a href="#">Create an Account</a></p>
-            </div>
-        </form>
+        <header>
+            <h1>WELCOME</h1>
+            <P>Register your account here</P>
+        </header>
+        <section>
+            <form>
+                <div class="foru">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div><br>
+                <div class="fore">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="mail@abc.com" required>
+                </div><br>
+                <div class="forp">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword" class="show">Show Password</label>
+                    <!-- <a href="forget.html" class="forgot-password">Forgot Password?</a> -->
+                </div><br>
+                <div class="dropdown">
+                    <label for="role">Select Role:</label><br>
+                    <select id="role" name="role" required class="dropdown1">
+                        <option value="">--Select Role--</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select> 
+                </div>
+                <div class="fors">
+                    <button type="submit" class="login">Register</button>
+                    <!-- <p>Don't have an account?<a href="newuser.html" class="sign-up">Sign Up</a></p> -->
+                </div><br>
+                <div class="divider">
+                    <span>or Sign in Google</span>
+                </div>
+                <div class="google-sign-in">
+                    <button type="button" class="google"><i class="fa-brands fa-google"></i> continue with
+                        Google</button>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
