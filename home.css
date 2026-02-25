@@ -555,7 +555,9 @@ body.dark .atlast::before {
         gap: 10px;
         align-items: center;
     }
-
+      .nav .image {
+        display: none;
+    }
     .nav ul li a.Demo,
     .nav ul li a.Login {
         margin-left: 0;
